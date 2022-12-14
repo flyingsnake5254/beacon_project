@@ -13,10 +13,19 @@
         android:theme="@style/Theme.Beacon_project"
         tools:targetApi="31">
         <activity
+            android:name=".RootPage"
+            android:exported="false"
+            android:label="@string/title_activity_root_page"
+            android:theme="@style/Theme.Beacon_project.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ui.login.LoginActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_login" />
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Welcome"
             android:exported="true"
